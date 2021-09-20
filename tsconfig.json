@@ -22,7 +22,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "components/Navbar.jsx"  ],
+, "components/Navbar.jsx", "lib/firebase.js", "lib/context.js", "pages/book/[bookid]/index.jsx", "pages/category/[categoryid]/index.jsx", "pages/login.jsx", "pages/index.jsx", "pages/_app.jsx", "components/BookFeed.jsx", "components/Loader.jsx"  ],
   "exclude": [
     "node_modules"
   ]

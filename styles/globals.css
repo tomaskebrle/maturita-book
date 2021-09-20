@@ -4,20 +4,18 @@
 
 html,
 body {
-  padding: 0;
-  margin: 0;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 * {
   box-sizing: border-box;
 }
 
-/*CSS Variables*/
-:root {
-  --color-bg: #eef0f1;
-  --color-primary: #10B981;
-}
 
+.full-page {
+  min-height: 90vh;
+}
 
 .loader {
   border: 10px solid var(--color-bg);
