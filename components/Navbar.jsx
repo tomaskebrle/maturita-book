@@ -14,7 +14,7 @@ export default function Navbar() {
         </Link>
         <div className="flex-grow"></div>
         {user && (
-          <>
+          <Link href="/login" className="cursor-pointer">
             <li className="flex bg-gray-200 rounded-md p-1">
               <img className="rounded-full w-12 h-12" src={user.photoURL}></img>
               <div className="align-middle inline-block">
@@ -23,7 +23,7 @@ export default function Navbar() {
                 </div>
               </div>
             </li>
-          </>
+          </Link>
         )}
         {!user && (
           <li className="flex-initial bg-green-700 bg-opacity-75 p-2 m-2 rounded-md text-white font-bold cursor-pointer">
