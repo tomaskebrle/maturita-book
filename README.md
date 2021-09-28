@@ -1,34 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Maturita book
+*Next.js firebase powered website, for my school. It shows all books in the reading list for graduation, and lets the users rank them by liking books*
+# Main Page
+![image](https://user-images.githubusercontent.com/56836089/135150384-3dc22a4f-e41f-4acb-be1a-6a468b6bccf1.png)
 
-## Getting Started
+# Page for individual book
+![image](https://user-images.githubusercontent.com/56836089/135150985-26905422-eee7-4f1a-a44f-3550e0a7befc.png)
 
-First, run the development server:
+<p align="center">
+  I know it's kinda blank, but I plan to add comments in the near future 
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+# TO-DO List
+- [x] Extracted book list from PDF to JSON
+- [x] Firebase Setup
+- [x] Book Page
+- [x] Main Page
+- [x] Login
+- [x] Liking books
+- [x] Sorting and searching
+- [ ] Comments
+- [ ] Optimizing for database reads
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# How to run?
+1. `git clone https://github.com/Kendy205/maturita-book`
+2. Change firebase credentials in `lib/firebase.js`
+3. `npm install`
+4. `npm run dev` 
