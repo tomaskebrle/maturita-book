@@ -43,7 +43,7 @@ export async function getServerSideProps({ query }) {
   }
 }
 
-export default function category({ book, comments}) {
+export default function BookPage({ book, comments}) {
   const bookRef = firestore.collection('books').doc(`${book.id}`);
   const [realtimePost] = useDocumentData(bookRef, book);
   const bookData = realtimePost || book;
