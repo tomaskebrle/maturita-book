@@ -18,7 +18,7 @@
 - [x] Login
 - [x] Liking books
 - [x] Sorting and searching
-- [ ] Comments
+- [x] Comments
 - [ ] Optimizing for database reads
 
 # How to run?
