@@ -4,7 +4,7 @@ import Link from "next/link"
 export class Footer extends Component {
 	render() {
 		return (
-			<footer className='max-w-screen min-w-screen grid bg-black text-white p-8 grid-cols-2 gap-8 mt-8'>
+			<footer className='grid bg-black text-white p-8 grid-cols-2 gap-8 mt-8 absolute bottom-0 min-w-full'>
 				<section>
 					<h1 className='font-bold text-3xl mb-4'>O této stránce</h1>
 					<p>

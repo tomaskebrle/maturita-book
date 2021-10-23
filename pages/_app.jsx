@@ -11,15 +11,19 @@ function MyApp({ Component, pageProps }) {
   const userData = useUserData();
   return (
     <UserContext.Provider value={userData}>
-      <div className="bg-gray-50 min-h-screen h-screen">
+      <div className="bg-gray-50">
         <Head>
           <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
             rel="stylesheet"></link>
         </Head>
         <Navbar />
-        <Component {...pageProps} />
+        <div className="min-h-scren">
+          <Component {...pageProps} />
+        </div>
         <Toaster />
-        <Footer/>
+        <div className="relative h-screen">
+          <Footer/>
+        </div>
       </div>
     </UserContext.Provider>
   )
