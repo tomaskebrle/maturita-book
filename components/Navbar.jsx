@@ -27,7 +27,7 @@ export default function Navbar() {
         )}
         {!user && (
           <li className="flex-initial bg-green-700 bg-opacity-75 p-2 m-2 rounded-md text-white font-bold cursor-pointer">
-            <Link href="/login">LOG IN</Link>
+            <Link href="/login">Přihlásit se</Link>
           </li>
         )}
       </ul>

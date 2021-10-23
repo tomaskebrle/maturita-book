@@ -58,10 +58,10 @@ export default function BookFeed({ books }) {
   }, [sortValue, sortType])
   return (
     <>
-      <div className="search xl:w-3/6 w-11/12 md:flex grid place-items-center bg-gray-50">
+      <div className="search xl:w-3/6 w-11/12 md:flex grid place-items-center bg-gray-50 duration-300">
         <input type="text" className="my-2 border-2 w-full rounded-md p-2 focus:border-green-700 focus:outline-none border-gray-500" onChange={(event) => handleSearch(event)} placeholder="Hledej mezi knížkama a autory" />
 
-        <div className="sortby flex-initial mx-4 text-lg py-1.5 bg-gray-50">
+        <div className="sortby flex-initial mx-4 text-lg py-1.5 bg-gray-50 duration-300">
           <b className="uppercase">Seřadit podle</b>
           <select className="flex-auto bg-gray-50" onChange={(e) => setSortValue(e.target.value)}>
             <option value="points">Bodů</option>
@@ -70,7 +70,7 @@ export default function BookFeed({ books }) {
           </select>
         </div>
 
-        <div className="sortby flex-initial mx-4 text-lg py-1.5">
+        <div className="sortby flex-initial mx-4 text-lg py-1.5 duration-300">
           <b className="uppercase">Od</b>
           <select className="flex-auto bg-gray-50" onChange={(e) => setSortType(e.target.value)}>
             <option value="lowest">Nejmenšího po největší</option>

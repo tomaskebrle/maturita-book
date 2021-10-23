@@ -29,44 +29,16 @@ function SignInButton() {
     try {
       await auth.signInWithPopup(googleAuthProvider)
       toast.success('Nyní jste příhlášení')
-    } catch {
-      toast.error('Něco se pokazilo')
+    } catch(e) {
+      toast.error('Něco se pokazilo',e)
     }
   }
-
-    // Email link 
-    var actionCodeSettings = {
-      // URL you want to redirect back to. The domain (www.example.com) for this
-      // URL must be in the authorized domains list in the Firebase Console.
-      url: 'https://maturita-book.vercel.app',
-      // This must be true.
-      handleCodeInApp: true,
-    };
-
-    const signInWithEmailLink = async () => {
-      console.log(email);
-      try {
-        auth.sendSignInLinkToEmail(email, actionCodeSettings)
-        .then(() => {
-          window.localStorage.setItem('emailForSignIn', email);
-        })
-        toast.success('Nyní jste příhlášení')
-      } catch {
-        toast.error('Něco se pokazilo')
-      }
-
-  }
-
   return (
     <>
     <button className="bg-green-500 p-4 font-bold rounded-md m-2 text-white w-72 mb-16" onClick={signInWithGoogle}>
-      Sign in with Google
+      Přihlásit se přes Google
     </button>
     <br />
-    <input type="email" className="rounded-md p-2 border-2 border-green-500 w-72 focus:outline-none" onChange={(e) => setEmail(e.target.value)}/>
-    <button className="bg-green-500 p-4 font-bold rounded-md m-2 text-white w-72 mb-16" onClick={signInWithEmailLink}>
-      Sign in with Email link
-    </button>
     </>
   )
 }

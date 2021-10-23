@@ -1,13 +1,13 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import { firestore, postToJSON } from '../lib/firebase';
+import { firestore, postToJSONWithoutMilis } from '../lib/firebase';
 import { useState } from 'react';
 import BookFeed from '../components/BookFeed'
 import Loader from '../components/Loader';
 export async function getServerSideProps(context) {
   const booksQuery = firestore.collection('books').orderBy("points", "desc")
-  const books = (await booksQuery.get()).docs.map(postToJSON)
+  const books = (await booksQuery.get()).docs.map(postToJSONWithoutMilis)
   return { props: { books } }
 }
 
