@@ -26,16 +26,14 @@
 1. `git clone https://github.com/Kendy205/maturita-book`
 2. Create a new file in `src/lib` called `env.js`
     Put your firebase credentials in like this:
-    ```js
-    export const firebaseConfig = {
-      apiKey: // Your API key,
-      authDomain: //Your Auth Domain,
-      projectId: // Your projectID,
-      storageBucket: // Your storageBucket,
-      messagingSenderId: // Your messagingSenderId,
-      appId: //Your appId,
-      measurementId: //Your measurment id
-    };
+    ```env
+    NEXT_PUBLIC_FIREBASE_API_KEY=
+    NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=
+    NEXT_PUBLIC_FIREBASE_DATABASE_URL=
+    NEXT_PUBLIC_FIREBASE_PROJECT_ID=
+    NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=
+    NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=
+    NEXT_PUBLIC_FIREBASE_APP_ID=
     ```
 3. `npm install`
 4. `npm run dev`
