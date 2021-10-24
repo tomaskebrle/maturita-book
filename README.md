@@ -19,10 +19,23 @@
 - [x] Liking books
 - [x] Sorting and searching
 - [x] Comments
-- [ ] Optimizing for database reads
+- [x] Optimizing for database reads
+- [ ] Ability to remove and edit comments
 
 # How to run?
 1. `git clone https://github.com/Kendy205/maturita-book`
-2. Change firebase credentials in `lib/firebase.js`
+2. Create a new file in `src/lib` called `env.js`
+    Put your firebase credentials in like this:
+    ```js
+      export const firebaseConfig = {
+      apiKey: // Your API key,
+      authDomain: //Your Auth Domain,
+      projectId: // Your projectID,
+      storageBucket: // Your storageBucket,
+      messagingSenderId: // Your messagingSenderId,
+      appId: //Your appId,
+      measurementId: //Your measurment id
+    };
+    ```
 3. `npm install`
-4. `npm run dev` 
+4. `npm run dev`
