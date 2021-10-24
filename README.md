@@ -27,7 +27,7 @@
 2. Create a new file in `src/lib` called `env.js`
     Put your firebase credentials in like this:
     ```js
-      export const firebaseConfig = {
+    export const firebaseConfig = {
       apiKey: // Your API key,
       authDomain: //Your Auth Domain,
       projectId: // Your projectID,
