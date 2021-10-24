@@ -5,10 +5,23 @@ import { firestore, postToJSONWithoutMilis } from '../lib/firebase';
 import { useState } from 'react';
 import BookFeed from '../components/BookFeed'
 import Loader from '../components/Loader';
-export async function getServerSideProps(context) {
+
+/* export async function getServerSideProps(context) {
   const booksQuery = firestore.collection('books').orderBy("points", "desc")
   const books = (await booksQuery.get()).docs.map(postToJSONWithoutMilis)
   return { props: { books } }
+}
+ */
+
+export async function getStaticProps(context) {
+  const booksQuery = firestore.collection('books').orderBy("points", "desc")
+  const books = (await booksQuery.get()).docs.map(postToJSONWithoutMilis)
+  return {
+    props: {
+      books,
+    },
+    revalidate: 60 * 10,
+  };
 }
 
 export default function Home(props) {
