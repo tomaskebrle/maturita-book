@@ -24,7 +24,7 @@
 
 # How to run?
 1. `git clone https://github.com/Kendy205/maturita-book`
-2. Create a new file in `src/lib` called `env.js`
+2. Create a new file in the root directory called `env.local`
     Put your firebase credentials in like this:
     ```env
     NEXT_PUBLIC_FIREBASE_API_KEY=
