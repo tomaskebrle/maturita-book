@@ -2,13 +2,20 @@ import '../styles/globals.css';
 import Navbar from "../components/Navbar"
 import { Toaster } from "react-hot-toast"
 import { UserContext } from "../lib/context"
-import { useAuthState } from "react-firebase-hooks/auth"
-import { auth } from "../lib/firebase"
 import {useUserData} from "@lib/hooks"
 import Footer from "../components/Footer"
 import Head from "next/head"
+import {analytics, perf} from "@lib/firebase"
+import { useEffect } from 'react';
+
 function MyApp({ Component, pageProps }) {
   const userData = useUserData();
+
+  useEffect(() => {
+    analytics();
+    perf();
+  }, [])
+
   return (
     <UserContext.Provider value={userData}>
       <div className="bg-gray-50">
