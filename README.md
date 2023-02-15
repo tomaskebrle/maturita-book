@@ -1,14 +1,10 @@
+![User interface o maturita book](https://user-images.githubusercontent.com/56836089/219067794-2dda270a-4b62-46cc-8b9b-ba7e0e4965ed.png)
+
 # Maturita book
-*Next.js firebase powered website, for my school. It shows all books in the reading list for graduation, and lets the users rank them by liking books*
-# Main Page
-![image](https://user-images.githubusercontent.com/56836089/135150384-3dc22a4f-e41f-4acb-be1a-6a468b6bccf1.png)
+Next.js firebase powered website, for my school. It shows all books in the reading list for graduation, and lets the users rank them by liking books
 
-# Page for individual book
-![image](https://user-images.githubusercontent.com/56836089/135150985-26905422-eee7-4f1a-a44f-3550e0a7befc.png)
-
-<p align="center">
-  I know it's kinda blank, but I plan to add comments in the near future 
-</p>
+# Česká verze
+Next.js a firebase web-aplikace, pro mojí školu, která zobrazuje všechny knížky na maturitní četbu, a dovoluje uživatelům přidávat komentáře a hodnotit knížky, aby pomohli ostatním se rozhodnout kterou knížku si vybrat.
 
 # TO-DO List
 - [x] Extracted book list from PDF to JSON
